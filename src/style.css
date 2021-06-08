@@ -1,4 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 p {
   font-size: 40px;
+  font-weight: bold;
 }
