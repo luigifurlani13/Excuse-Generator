@@ -25,15 +25,18 @@ let when = [
 var lastItem = who.length - 1;
 
 var selected = Math.floor(Math.random() * lastItem);
+var chosen = Math.floor(Math.random() * lastItem);
+var highlighted = Math.floor(Math.random() * lastItem);
+var singled = Math.floor(Math.random() * lastItem);
 
 function randomExcuse() {
   let excuse =
     who[selected] +
     " " +
-    action[selected] +
+    action[chosen] +
     " " +
-    what[selected] +
+    what[highlighted] +
     " " +
-    when[selected];
+    when[singled];
   document.querySelector("#excuse").innerHTML = excuse;
 }
